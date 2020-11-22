@@ -1,0 +1,236 @@
+.tables-forms {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.menu>li:not(:last-child) .sub-menu {
+    left: 0;
+}
+
+.menu>li:last-child .sub-menu {
+    right: 0;
+}
+
+.menu-grocery {
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: justify;
+    list-style: none;
+    font-size: 0;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+
+.menu-grocery>ul {
+    padding-bottom: 50px;
+}
+
+.menu-grocery::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.menu-grocery>li {
+    position: relative;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.menu-grocery>li:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+
+.menu-grocery>li:not(:first-child) {
+    border-left: 1px solid #3f4852;
+}
+
+.menu-grocery>li:hover {
+    background-color: #3f4852;
+    border-radius: 3px;
+}
+
+.menu-grocery a {
+    font: bold 16px "Arial", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-grocery>li:hover>a{
+    color: #fd8612;
+}
+
+.menu-grocery li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    padding-top: 5px;
+    width: 210px;
+    top: 100%;
+    
+}
+
+.sub-menu ul {
+    padding: 0;
+    background-color: #d2d4d5;
+    border-radius: 3px;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li:not(:last-child) {
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.sub-menu li:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.sub-menu li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 15px 20px 10px;
+    font: bold 15px "Arial", sans-serif;
+    color: #2a3644;
+    text-align: left;
+}
+
+.sub-menu li:hover {
+    background-color: #2a3644;
+}
+
+.sub-menu a:hover {
+    color: #fd8612;
+}
+
+.name {
+    padding-left: 25px;
+    width: 53%;
+    text-align: left;
+}
+
+.nav,
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav th,
+.nav td,
+.table b,
+.table i {
+    padding: 18px 23px 12px;
+}
+
+.nav tr:not(:last-child) th,
+.table p:not(:last-child) b {
+    border-bottom: 1px solid #3f4852;
+}
+
+.nav tr:first-child th:last-child,
+.table p:first-child b:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+.nav tr:not(:last-child) td,
+.table p:not(:last-child) i {
+    border-bottom: 1px solid #c0c1c2;
+}
+
+.nav tr:nth-child(odd) td,
+.table p:nth-child(odd) i {
+    background-color: #f2f2f2;
+}
+
+.nav tr:nth-child(even) td,
+.table p:nth-child(even) i {
+    background-color: #e8e8e8;
+}
+
+.nav tr:hover td,
+.table p:hover i {
+    background-color: #c0c1c2;
+}
+
+.nav tr:last-child td:first-child,
+.table p:last-child i:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+.nav tr:last-child td:last-child,
+.table p:last-child i:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+.nav th,
+.table b {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    background-color: #2a3644;
+}
+
+.nav tr:first-child th:first-child,
+.table p:first-child b:first-child {
+    padding: 18px 10px 12px;
+    border-radius: 3px 0 0 0;
+}
+
+.nav th:not(:last-child),
+.table b:not(:last-child) {
+    border-right: 1px solid #3f4852;
+    ;
+}
+
+.nav td,
+.table i {
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+}
+
+.nav td:first-child,
+.table i:first-child {
+    padding: 18px 10px 12px;
+    text-align: center;
+}
+
+.nav td:nth-child(n+3),
+.table i:nth-child(n+3) {
+    text-align: right;
+}
+
+.nav td:not(:last-child),
+.table i:not(:last-child) {
+    border-right: 1px solid #c0c1c2;
+}
+
+.table {
+    margin-bottom: 25px;
+    display: table;
+}
+
+.table p {
+    display: table-row;
+}
+
+.table b:first-child,
+.table b:nth-child(n+3) {
+    text-align: center;
+}
+
+.table b,
+.table i {
+    display: table-cell;
+}
