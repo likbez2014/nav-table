@@ -11,7 +11,8 @@
     right: 0;
 }
 
-.menu-grocery {
+.menu-grocery,
+.gadget {
     padding: 0;
     margin-bottom: 25px;
     text-align: justify;
@@ -37,31 +38,37 @@
     display: inline-block;
 }
 
-.menu-grocery>li:not(:last-child) {
+.menu-grocery>li:not(:last-child),
+.menu-gadget>li:not(:last-child) {
     border-right: 1px solid #3f4852;
 }
 
-.menu-grocery>li:not(:first-child) {
+.menu-grocery>li:not(:first-child),
+.menu-gadget>li:not(:first-child) {
     border-left: 1px solid #3f4852;
 }
 
-.menu-grocery>li:hover {
+.menu-grocery>li:hover,
+.menu-gadget>li:hover {
     background-color: #3f4852;
     border-radius: 3px;
 }
 
-.menu-grocery a {
+.menu-grocery a,
+.menu-gadget a {
     font: bold 16px "Arial", sans-serif;
     text-decoration: none;
     text-align: center;
     color: #fff;
 }
 
-.menu-grocery>li:hover>a{
+.menu>li:hover>a  {
     color: #fd8612;
 }
 
-.menu-grocery li:hover .sub-menu {
+.menu li:hover .sub-menu,
+.sub-menu li:hover .sub-2,
+.sub-2 li:hover .sub-3 {
     display: block;
 }
 
@@ -71,7 +78,27 @@
     padding-top: 5px;
     width: 210px;
     top: 100%;
-    
+    z-index: 1;
+}
+
+.sub-2 {
+    position: absolute;
+    display: none;
+    padding-left: 5px;
+    width: 210px;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+}
+/* саб-меню */
+.sub-3 {
+    position: absolute;
+    display: none;
+    padding-right: 5px;
+    width: 210px;
+    top: 0;
+    right: 100%;
+    z-index: 1;
 }
 
 .sub-menu ul {
@@ -81,6 +108,7 @@
 }
 
 .sub-menu li {
+    position: relative;
     display: block;
 }
 
@@ -108,7 +136,7 @@
     background-color: #2a3644;
 }
 
-.sub-menu a:hover {
+.sub-menu li:hover>a {
     color: #fd8612;
 }
 
@@ -116,6 +144,25 @@
     padding-left: 25px;
     width: 53%;
     text-align: left;
+}
+
+.gadget {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+.menu-gadget {
+    display: table-row;
+}
+
+.menu-gadget>li {
+    display: table-cell;
+    padding: 20px 42px 15px;
+    position: relative;
+}
+
+.menu-gadget>li a {
 }
 
 .nav,
