@@ -44,22 +44,29 @@
 }
 
 .menu-grocery>li:not(:first-child),
-.menu-gadget>li:not(:first-child) {
+.menu-gadget>li:not(:first-child),
+.nav-menu>li:not(:first-child) {
     border-left: 1px solid #3f4852;
 }
 
 .menu-grocery>li:hover,
-.menu-gadget>li:hover {
+.menu-gadget>li:hover,
+.nav-menu>li:hover {
     background-color: #3f4852;
     border-radius: 3px;
 }
 
 .menu-grocery a,
-.menu-gadget a {
+.menu-gadget a,
+.nav-menu a {
     font: bold 16px "Arial", sans-serif;
     text-decoration: none;
     text-align: center;
     color: #fff;
+}
+
+.nav-menu li {
+    position: relative;
 }
 
 .menu>li:hover>a  {
@@ -72,32 +79,12 @@
     display: block;
 }
 
-.sub-menu {
+.sub-menu {         /* main styles of the drop-down menu*/
     position: absolute;
     display: none;
     padding-top: 5px;
     width: 210px;
     top: 100%;
-    z-index: 1;
-}
-
-.sub-2 {
-    position: absolute;
-    display: none;
-    padding-left: 5px;
-    width: 210px;
-    top: 0;
-    left: 100%;
-    z-index: 1;
-}
-/* саб-меню */
-.sub-3 {
-    position: absolute;
-    display: none;
-    padding-right: 5px;
-    width: 210px;
-    top: 0;
-    right: 100%;
     z-index: 1;
 }
 
@@ -140,6 +127,26 @@
     color: #fd8612;
 }
 
+.sub-2 {
+    position: absolute;
+    display: none;
+    padding-left: 5px;
+    width: 210px;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+}
+/* саб-меню */
+.sub-3 {
+    position: absolute;
+    display: none;
+    padding-right: 5px;
+    width: 210px;
+    top: 0;
+    right: 100%;
+    z-index: 1;
+}
+
 .name {
     padding-left: 25px;
     width: 53%;
@@ -162,7 +169,175 @@
     position: relative;
 }
 
-.menu-gadget>li a {
+
+/*---class services---*/
+
+.services {
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+
+.services ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.menu>li {
+    display: inline-block;
+}
+
+.nav-menu {
+    margin: 0;
+    float: left;
+}
+
+.nav-menu>li:first-child>a {
+    padding: 15px 30px 15px 60px;
+}
+
+.nav-menu>li:not(:first-child)>a {
+    padding: 15px 30px;
+}
+
+.table-menu { /* width of the drop-down menu*/
+    width: 420px;
+}
+
+.table-menu li {
+    box-sizing: border-box;
+}
+
+.sub-menu-1 {
+    float: left;
+}
+
+.sub-menu-2 {
+    float: left;
+}
+
+.sub-menu-1 a,
+.sub-menu-2 a {
+    padding: 15px 50px 10px 20px;
+}
+
+.sub-menu-2 li:nth-child(n+3) a {
+    visibility: hidden;
+}
+
+.table-menu ul:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.table-menu ul:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.sub-menu-1 {
+    border-right: 1px solid #b9bdc1;
+}
+
+.sub-menu-1 li:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+.sub-menu-1 li:last-child {
+    border-radius: 0 0 0 3px;
+}
+
+.sub-menu-2 li:first-child {
+    border-radius: 0 3px 0 0;
+}
+
+.sub-menu-2 li:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+.sub-4 {
+    left: 0;
+}
+.icon {
+    float: right;
+    margin: 0;
+    padding: 14px 30px;
+}
+
+.icon li {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.icon a {
+    display: block;
+    text-decoration: none;
+    background-image: url(../img/sprite-table.png);
+}
+
+.nav-menu>li:first-child>a:before {
+    content: "";
+    position: absolute;
+    background-position: 0 0;
+    left: 30px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/sprite-table.png);
+}
+
+.nav-menu>li:first-child>a:hover::before {
+    background-position: 0 -18px;
+}
+
+.sub-menu-2 li:nth-child(n+3) {
+    border-bottom: none;
+    background-color: #d2d4d5;
+}
+
+a.fb {
+    background-position: 70px 0;
+    width: 10px;
+    height: 17px;
+}
+
+a.tw {
+    background-position: 27px 0;
+    width: 17px;
+    height: 15px;
+}
+
+a.ins {
+    background-position: 42px 0;
+    width: 15px;
+    height: 15px;
+}
+
+a.fb:hover {
+    background-position: 70px -18px;
+}
+
+a.tw:hover {
+    background-position: 27px -18px;
+    width: 17px;
+    height: 15px;
+}
+
+a.ins:hover {
+    background-position: 42px -18px;
+    width: 15px;
+    height: 15px;
+}
+
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .nav,
